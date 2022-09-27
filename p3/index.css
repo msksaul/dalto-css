@@ -1,0 +1,136 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* div {
+  margin: auto;
+  margin-top: 50px;
+  width: 320px;
+  height: 250px;
+  border: 4px solid red;
+  background-color: gray;
+  overflow: auto;
+} */
+
+.texto {
+  padding: 20px;
+}
+
+.texto::first-letter {
+  color: blue;
+  font-size: 2em;
+}
+
+form {
+  margin: 100px auto;
+  display: block;
+  background-color: #555;
+  padding: 40px;
+  width: 50%;
+}
+
+input {
+  padding: 6px;
+  width: 100%;
+}
+
+input::placeholder {
+  color: red;
+  font-size: 10px;
+}
+
+.texto::selection {
+  color: red;
+  background-color: black;
+}
+
+b {
+  margin: 50px auto;
+  padding: 6px;
+  width: 50%;
+  display: block;
+}
+
+b::before {
+  content: 'me suscribi';
+}
+
+b::after {
+  content: 'dalto';
+  color: red;
+}
+
+.caja1 {
+  height: 200px;
+  width: 200px;
+  background-color: slateblue;
+  transition: background-color 1s, height 1s, width 1s; /* all 1s */
+}
+
+.caja1:hover {
+  background-color: red;
+  height: 300px;
+  width: 300px;
+}
+
+a {
+  display: block;
+  margin: 30px auto;
+  width: 50%;
+}
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: violet;
+}
+
+.caja2 {
+  width: 250px;
+  height: 250px;
+  background-color: red;
+  margin: 25px;
+  color: white;
+}
+
+.caja2:active {
+  color: blue;
+}
+
+input:focus {
+  background-color: blue;
+}
+
+.caja2 b:lang(en) {
+  color: yellow;
+}
+
+.caja3 {
+  margin: 25px;
+  width: 300px;
+  height: 300px;
+}
+
+.caja3 img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: left;
+}
+
+.caja4 {
+  margin: 45px;
+  width: 200px;
+  height: 300px;
+  border: 5px solid red;
+  background-color: pink;
+  cursor: pointer;
+}
+
+.caja4:active {
+  cursor: row-resize;
+}
