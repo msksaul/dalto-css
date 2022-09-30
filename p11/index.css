@@ -1,0 +1,56 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding: 20px 5px;
+  background-color: #86f;
+}
+
+.caja1 {
+  background-color: #025;
+  height: 100px;
+  width: 100px;
+  margin: 30px;
+  position: relative;
+  animation-name: desplazarse;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+
+.caja {
+  background-color: #025;
+  height: 80px;
+  width: 80px;
+  margin: 20px;
+  display: flex;
+  color: #fff;
+  transition: transform 1s;
+}
+
+.caja:hover {
+  transform: scale(1.5, 0.5) translate(100px, 100px);
+}
+
+b {
+  margin: auto;
+}
+
+@keyframes desplazarse {
+  0% {
+    left: 0;
+    background-color: #025;
+  }
+  50% {
+    background-color: red;
+  }
+  100% {
+    left: 80%;
+    background-color: green;
+  }
+}
