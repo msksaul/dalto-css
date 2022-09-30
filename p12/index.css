@@ -1,0 +1,80 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --color-primary: #86f
+}
+
+.container {
+  padding: 10px 5px;
+  background: var(--color-primary);
+  height: 200px;
+  width: 350px;
+  margin: 40px;
+  background-image: url(https://images7.alphacoders.com/320/320986.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-clip: content-box; */
+  background-origin: content-box; 
+  border: 10px solid transparent;
+  background-position: left top;
+  /* background-attachment: fixed; */
+}
+
+.container2 {
+  width: 650px;
+  height: 500px;
+  filter: blur(5px);
+  filter: brightness(10);
+  filter: contrast(1.5);
+  filter: drop-shadow(10px 10px 10px 5px #000);
+  filter: invert(100%);
+}
+
+.container2 img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.container3 {
+  filter: contrast(30);
+  background-color: #fff;
+}
+
+.caja {
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  margin: 40px;
+  border-radius: 50%;
+  filter: blur(20px);
+}
+
+.caja:first-child {
+  animation: trasladar 3s alternate infinite;
+}
+
+@keyframes trasladar {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(160px);
+  }
+}
+
+.container4 {
+  padding: 20px;
+  background-color: #59f;
+  font-size: 20px;
+  letter-spacing: 5px;
+  margin-bottom: 30px;
+  user-select: none;
+  text-shadow: 2px 2px #eee
+}
